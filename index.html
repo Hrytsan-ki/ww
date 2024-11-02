@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа для абітурієнтів</title>
+    <head>
+        <style>
+          body { background-color: #f0f0f0; font-family: Arial, sans-serif; }
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #555;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.specialties-list, .universities-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+article button:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+        </style>
+      </head>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#specialties">Спеціальність</a></li>
+                <li><a href="#universities">Навчальні заклади</a></li>
+                <li><a href="#reviews">Відгуки студентів</a></li>
+                <li><a href="#faq">Питання та відповіді</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <h1>Ласкаво просимо на платформу для абітурієнтів!</h1>
+        <p>Знайдіть свою майбутню професію та навчальний заклад вже сьогодні.</p>
+        <input type="text" placeholder="Пошук спеціальності або закладу...">
+        <button>Шукати</button>
+    </header>
+
+    <main>
+        <section id="specialties">
+            <h2>Популярні спеціальності</h2>
+            <div class="specialties-list">
+                <article>
+                    <h3>Програмна інженерія</h3>
+                    <p>Опис спеціальності...</p>
+                    <button>Детальніше</button>
+                </article>
+                <article>
+                    <h3>Медицина</h3>
+                    <p>Опис спеціальності...</p>
+                    <button>Детальніше</button>
+                </article>
+                <!-- Додати більше спеціальностей -->
+            </div>
+        </section>
+
+        <section id="universities">
+            <h2>Популярні навчальні заклади</h2>
+            <div class="universities-list">
+                <article>
+                    <h3>Національний університет</h3>
+                    <p>Опис закладу...</p>
+                    <button>Детальніше</button>
+                </article>
+                <article>
+                    <h3>Політехнічний інститут</h3>
+                    <p>Опис закладу...</p>
+                    <button>Детальніше</button>
+                </article>
+                <!-- Додати більше навчальних закладів -->
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Відгуки студентів</h2>
+            <p>Ось що кажуть студенти про свої навчальні заклади:</p>
+            <article>
+                <h3>Програмна інженерія - Національний університет</h3>
+                <p>Студент: "Навчання цікаве, багато практики!"</p>
+            </article>
+            <article>
+                <h3>Медицина - Медичний інститут</h3>
+                <p>Студент: "Чудові викладачі та можливості для розвитку."</p>
+            </article>
+            <!-- Додати більше відгуків -->
+        </section>
+
+        <section id="faq">
+            <h2>Часті запитання</h2>
+            <div class="faq-list">
+                <article>
+                    <h3>Як подати документи?</h3>
+                    <p>Для подачі документів слід звернутися до приймальної комісії навчального закладу.</p>
+                </article>
+                <article>
+                    <h3>Які перспективи роботи після закінчення?</h3>
+                    <p>Перспективи залежать від обраної спеціальності. Більшість випускників знаходять роботу у сфері своєї кваліфікації.</p>
+                </article>
+                <!-- Додати більше запитань -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Платформа для абітурієнтів. Всі права захищені.</p>
+        <p>Контактна інформація: info@platform.com</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
